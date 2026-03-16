@@ -1,0 +1,131 @@
+<div class="size-chart-table top">
+  <div>Male Model 180cm 68kg Size: L / Female Model 166cm 56kg Size: M</div>
+  <div class="size-toggle">
+    <span class="toggle-btn active" data-unit="inch">INCHES</span> |
+    <span class="toggle-btn" data-unit="cm">CM</span>
+  </div>
+
+  <table class="top cm" style="display: none;">
+    <thead>
+      <tr>
+        <th>SIZE</th>
+        <th>M</th>
+        <th>L</th>
+        <th>XL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>CHEST</td>
+        <td>114</td>
+        <td>69</td>
+        <td>79</td>
+      </tr>
+      <tr>
+        <td>LENGTH</td>
+        <td>120</td>
+        <td>70</td>
+        <td>80.5</td>
+      </tr>
+      <tr>
+        <td>SLEEVES</td>
+        <td>130</td>
+        <td>72</td>
+        <td>82</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <table class="top inch">
+    <thead>
+      <tr>
+        <th>SIZE</th>
+        <th>M</th>
+        <th>L</th>
+        <th>XL</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>CHEST</td>
+        <td>45</td>
+        <td>27</td>
+        <td>31</td>
+      </tr>
+      <tr>
+        <td>LENGTH</td>
+        <td>47 1/4</td>
+        <td>27 1/2</td>
+        <td>31 1/4</td>
+      </tr>
+      <tr>
+        <td>SLEEVES</td>
+        <td>51 1/4</td>
+        <td>28 1/2</td>
+        <td>32 1/4</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<style>
+  .size-toggle {
+    margin: 10px 0;
+    cursor: pointer;
+  }
+  .toggle-btn {
+    opacity: 0.6;
+    transition: opacity 0.2s;
+  }
+  .toggle-btn:hover {
+    opacity: 0.8;
+  }
+  .toggle-btn.active {
+    font-weight: bold;
+    opacity: 1;
+    text-decoration: underline;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const sizeCharts = document.querySelectorAll('.size-chart-table');
+
+    // Set default active
+    const defaultUnit = 'inch';
+
+    sizeCharts.forEach((chart) => {
+      const toggles = chart.querySelectorAll('.toggle-btn');
+      const tables = chart.querySelectorAll('table');
+
+      // Initialize state explicitly
+      toggles.forEach((b) => {
+        if (b.dataset.unit === defaultUnit) b.classList.add('active');
+        else b.classList.remove('active');
+      });
+      tables.forEach((t) => {
+        if (t.classList.contains(defaultUnit)) t.style.display = 'table';
+        else t.style.display = 'none';
+      });
+
+      toggles.forEach((btn) => {
+        btn.addEventListener('click', function () {
+          const unit = this.dataset.unit;
+
+          // Toggle buttons
+          toggles.forEach((b) => b.classList.remove('active'));
+          this.classList.add('active');
+
+          // Toggle tables
+          tables.forEach((t) => {
+            if (t.classList.contains(unit)) {
+              t.style.display = 'table';
+            } else {
+              t.style.display = 'none';
+            }
+          });
+        });
+      });
+    });
+  });
+</script>
