@@ -177,10 +177,10 @@
     "color_schemes": {
       "scheme-1": {
         "settings": {
-          "background": "#eae8e4",
+          "background": "#f2f2f2",
           "background_gradient": "",
           "text": "#193433",
-          "button": "#eae8e4",
+          "button": "#f2f2f2",
           "button_label": "#193433",
           "secondary_button_label": "#193433",
           "shadow": "#ffffff"
