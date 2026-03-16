@@ -56,6 +56,15 @@
             "page": "return-exchange-in-products-page"
           }
         },
+        "collapsible_tab_mCfmFB": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "Size Guide",
+            "icon": "check_mark",
+            "content": "",
+            "page": ""
+          }
+        },
         "popup_7gtE8g": {
           "type": "popup",
           "disabled": true,
@@ -90,6 +99,7 @@
         "description",
         "collapsible_tab_DHJnn7",
         "collapsible_tab_yMnzGG",
+        "collapsible_tab_mCfmFB",
         "popup_7gtE8g",
         "quantity_selector",
         "buy_buttons",
