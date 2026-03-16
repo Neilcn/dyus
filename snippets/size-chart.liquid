@@ -1,73 +1,436 @@
-<div class="size-chart-table top">
-  <div>Male Model 180cm 68kg Size: L / Female Model 166cm 56kg Size: M</div>
-  <div class="size-toggle">
-    <span class="toggle-btn active" data-unit="inch">INCHES</span> |
-    <span class="toggle-btn" data-unit="cm">CM</span>
+{% if product.handle contains 'embroidery-knit-track-top' %}
+  <div class="size-chart-table jacket">
+    
+    <div class="size-toggle">
+      <span class="toggle-btn active" data-unit="inch">INCHES</span> |
+      <span class="toggle-btn" data-unit="cm">CM</span>
+    </div>
+
+    <table class=" cm" style="display: none;">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CHEST</td>
+          <td>114</td>
+          <td>120</td>
+          <td>130</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>69</td>
+          <td>70</td>
+          <td>72</td>
+        </tr>
+        <tr>
+          <td>SLEEVES</td>
+          <td>79</td>
+          <td>80.5</td>
+          <td>82</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class=" inch">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CHEST</td>
+          <td>45</td>
+          <td>47 1/4</td>
+          <td>51 1/4</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>27</td>
+          <td>27 1/2</td>
+          <td>28 1/2</td>
+        </tr>
+        <tr>
+          <td>SLEEVES</td>
+          <td>31</td>
+          <td>31 3/4</td>
+          <td>32 1/4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>Male Model 180cm 68kg Size: L / Female Model 166cm 56kg Size: M</div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0734/7490/0191/files/SS26_Size_Chart_Shopify-01.jpg?v=1773685842"
+      width="250"
+      height=""
+    >
   </div>
+{% endif %}
+{% if product.handle contains '6-inch-knit-shorts' %}
+  <div class="size-chart-table short">
+    
+    <div class="size-toggle">
+      <span class="toggle-btn active" data-unit="inch">INCHES</span> |
+      <span class="toggle-btn" data-unit="cm">CM</span>
+    </div>
 
-  <table class="top cm" style="display: none;">
-    <thead>
-      <tr>
-        <th>SIZE</th>
-        <th>M</th>
-        <th>L</th>
-        <th>XL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>CHEST</td>
-        <td>114</td>
-        <td>69</td>
-        <td>79</td>
-      </tr>
-      <tr>
-        <td>LENGTH</td>
-        <td>120</td>
-        <td>70</td>
-        <td>80.5</td>
-      </tr>
-      <tr>
-        <td>SLEEVES</td>
-        <td>130</td>
-        <td>72</td>
-        <td>82</td>
-      </tr>
-    </tbody>
-  </table>
+    <table class=" cm" style="display: none;">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WAIST</td>
+          <td>69/95</td>
+          <td>82/108</td>
+          <td>90/118</td>
+        </tr>
+        <tr>
+          <td>HIP</td>
+          <td>105</td>
+          <td>115</td>
+          <td>125</td>
+        </tr>
+        <tr>
+          <td>INSEAM</td>
+          <td>14.5</td>
+          <td>15.5</td>
+          <td>16.5</td>
+        </tr>
+        <tr>
+          <td>LEGOPENING</td>
+          <td>60</td>
+          <td>64</td>
+          <td>68</td>
+        </tr>
+        <tr>
+          <td>FRONT RISE</td>
+          <td>29.8</td>
+          <td>31</td>
+          <td>32.5</td>
+        </tr>
+      </tbody>
+    </table>
 
-  <table class="top inch">
-    <thead>
-      <tr>
-        <th>SIZE</th>
-        <th>M</th>
-        <th>L</th>
-        <th>XL</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>CHEST</td>
-        <td>45</td>
-        <td>27</td>
-        <td>31</td>
-      </tr>
-      <tr>
-        <td>LENGTH</td>
-        <td>47 1/4</td>
-        <td>27 1/2</td>
-        <td>31 1/4</td>
-      </tr>
-      <tr>
-        <td>SLEEVES</td>
-        <td>51 1/4</td>
-        <td>28 1/2</td>
-        <td>32 1/4</td>
-      </tr>
-    </tbody>
-  </table>
-</div>
+    <table class=" inch">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WAIST</td>
+          <td>27 1/4 - 37 1/2</td>
+          <td>32 1/4 - 42 1/2</td>
+          <td>35 1/2 - 46 1/2</td>
+        </tr>
+        <tr>
+          <td>HIP</td>
+          <td>41 1/4</td>
+          <td>45 1/4</td>
+          <td>49 1/4</td>
+        </tr>
+        <tr>
+          <td>INSEAM</td>
+          <td>5 3/4</td>
+          <td>6 1/4</td>
+          <td>6 1/2</td>
+        </tr>
+        <tr>
+          <td>LEGOPENING</td>
+          <td>23 1/2</td>
+          <td>25 1/4</td>
+          <td>26 3/4</td>
+        </tr>
+        <tr>
+          <td>FRONT RISE</td>
+          <td>11 3/4</td>
+          <td>12 1/4</td>
+          <td>12 3/4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>Male Model 180cm 68kg Size: L / Female Model 166cm 56kg Size: M</div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0734/7490/0191/files/SS26_Size_Chart_Shopify-02.jpg?v=1773685858"
+      width="250"
+      height=""
+    >
+  </div>
+{% endif %}
+{% if product.handle contains 'mens-badge-tennis-jersey' %}
+  <div class="size-chart-table shirt">
+    
+    <div class="size-toggle">
+      <span class="toggle-btn active" data-unit="inch">INCHES</span> |
+      <span class="toggle-btn" data-unit="cm">CM</span>
+    </div>
 
+    <table class=" cm" style="display: none;">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CHEST</td>
+          <td>116</td>
+          <td>120</td>
+          <td>124</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>72</td>
+          <td>73.5</td>
+          <td>75</td>
+        </tr>
+        <tr>
+          <td>SHOULDER</td>
+          <td>19</td>
+          <td>20.7</td>
+          <td>22</td>
+        </tr>
+        <tr>
+          <td>SLEEVE</td>
+          <td>23</td>
+          <td>24</td>
+          <td>25</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class=" inch">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CHEST</td>
+          <td>45 3/4</td>
+          <td>47 1/4</td>
+          <td>48 3/4</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>28 1/4</td>
+          <td>29</td>
+          <td>29 1/2</td>
+        </tr>
+        <tr>
+          <td>SHOULDER</td>
+          <td>7 1/2</td>
+          <td>8 1/4</td>
+          <td>8 3/4</td>
+        </tr>
+        <tr>
+          <td>SLEEVE</td>
+          <td>9</td>
+          <td>9 1/2</td>
+          <td>9 3/4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>Male Model 180cm 68kg Size: L</div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0734/7490/0191/files/SS26_Size_Chart_Shopify-03.jpg?v=1773685958"
+      width="250"
+      height=""
+    >
+  </div>
+{% endif %}
+{% if product.handle contains 'womens-badge-tennis-jersey' %}
+  <div class="size-chart-table women-shirt">
+    
+    <div class="size-toggle">
+      <span class="toggle-btn active" data-unit="inch">INCHES</span> |
+      <span class="toggle-btn" data-unit="cm">CM</span>
+    </div>
+
+    <table class=" cm" style="display: none;">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>S</th>
+          <th>M</th>
+          <th>L</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CHEST</td>
+          <td>87</td>
+          <td>91</td>
+          <td>95</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>48</td>
+          <td>49</td>
+          <td>50</td>
+        </tr>
+        <tr>
+          <td>SHOULDER</td>
+          <td>38</td>
+          <td>40</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>SLEEVE</td>
+          <td>17.5</td>
+          <td>18</td>
+          <td>18.5</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class=" inch">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>CHEST</td>
+          <td>34 1/4</td>
+          <td>35 3/4</td>
+          <td>37 1/2</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>19</td>
+          <td>19 1/4</td>
+          <td>19 3/4</td>
+        </tr>
+        <tr>
+          <td>SHOULDER</td>
+          <td>15</td>
+          <td>15 3/4</td>
+          <td>16 1/2</td>
+        </tr>
+        <tr>
+          <td>SLEEVE</td>
+          <td>7</td>
+          <td>7</td>
+          <td>7 1/4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>Female Model 166cm 56kg Size: M</div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0734/7490/0191/files/SS26_Size_Chart_Shopify-04.jpg?v=1773685974"
+      width="250"
+      height=""
+    >
+  </div>
+{% endif %}
+{% if product.handle contains 'womens-tennis-skirt' %}
+  <div class="size-chart-table skirt">
+    
+    <div class="size-toggle">
+      <span class="toggle-btn active" data-unit="inch">INCHES</span> |
+      <span class="toggle-btn" data-unit="cm">CM</span>
+    </div>
+
+    <table class=" cm" style="display: none;">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>S</th>
+          <th>M</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WAIST</td>
+          <td>66</td>
+          <td>69</td>
+          <td>71</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>40</td>
+          <td>41</td>
+          <td>42</td>
+        </tr>
+        <tr>
+          <td>SWEEP</td>
+          <td>96</td>
+          <td>99</td>
+          <td>101</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table class=" inch">
+      <thead>
+        <tr>
+          <th>SIZE</th>
+          <th>M</th>
+          <th>L</th>
+          <th>XL</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WAIST</td>
+          <td>26</td>
+          <td>27 1/4</td>
+          <td>28</td>
+        </tr>
+        <tr>
+          <td>LENGTH</td>
+          <td>15 3/4</td>
+          <td>16 1/4</td>
+          <td>16 1/2</td>
+        </tr>
+        <tr>
+          <td>SWEEP</td>
+          <td>37 3/4</td>
+          <td>39</td>
+          <td>39 3/4</td>
+        </tr>
+      </tbody>
+    </table>
+    <div>Female Model 166cm 56kg Size: S</div>
+    <img
+      src="https://cdn.shopify.com/s/files/1/0734/7490/0191/files/SS26_Size_Chart_Shopify-05.jpg?v=1773685991"
+      width="250"
+      height=""
+    >
+  </div>
+{% endif %}
 <style>
   .size-toggle {
     margin: 10px 0;
@@ -84,6 +447,18 @@
     font-weight: bold;
     opacity: 1;
     text-decoration: underline;
+  }
+  .size-chart-table thead tr,
+  .size-chart-table tbody td {
+    padding-left: 0;
+    text-align: left;
+    min-width: 55px;
+  }
+  .size-chart-table tbody td {
+    border-top: 1px solid #dadad6;
+  }
+  .size-chart-table table {
+    width: 100%;
   }
 </style>
 
