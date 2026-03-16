@@ -42,7 +42,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Delivery",
-            "icon": "truck",
+            "icon": "none",
             "content": "",
             "page": "delivery-in-products-page"
           }
@@ -51,7 +51,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Returns & Exchanges",
-            "icon": "return",
+            "icon": "none",
             "content": "",
             "page": "return-exchange-in-products-page"
           }
@@ -60,7 +60,7 @@
           "type": "collapsible_tab",
           "settings": {
             "heading": "Size Guide",
-            "icon": "check_mark",
+            "icon": "none",
             "content": "",
             "page": ""
           }
