@@ -115,6 +115,24 @@
         "show_text_below": true
       }
     },
+    "image_banner_Qcpj4x": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Mens_Polo_White_06_3f1a9d91-834a-4564-817c-db1e70b5cdf5.jpg",
+        "image_2": "shopify://shop_images/Mens_Polo_Navy_01_279ac8fa-7570-4277-bc94-d53374b3a9fa.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
     "slideshow_jiK8gm": {
       "type": "slideshow",
       "name": "t:sections.slideshow.presets.name",
@@ -191,6 +209,7 @@
     "image_banner",
     "image_banner_FDW9XK",
     "image_banner_ADYd8L",
+    "image_banner_Qcpj4x",
     "slideshow_jiK8gm",
     "rich_text_Q8TM98",
     "rich_text_wbVmTM",
