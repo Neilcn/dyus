@@ -65,8 +65,8 @@
     "image_banner": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Track_Top_White_06_770443e5-68ac-4811-b370-0847a73ac2ec.jpg",
-        "image_2": "shopify://shop_images/Track_Top_Navy_07_524bab4d-d3e0-4ae0-9127-750c6ed6eba4.jpg",
+        "image": "shopify://shop_images/Track_Top_White_06_b0ae9c80-9bb1-4a50-a25c-f37cd5ead7e1.jpg",
+        "image_2": "shopify://shop_images/Track_Top_Navy_07_9ed97e9c-6fcc-4aeb-8653-400a0aa39038.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-center",
