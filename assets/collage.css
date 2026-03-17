@@ -200,3 +200,7 @@
   outline: none;
   box-shadow: none;
 }
+/* 讓 header 覆蓋在圖片橫幅上 */
+#shopify-section-template--21269574451423__image_banner_ACRtyp {
+  margin-top: -80px;
+}
