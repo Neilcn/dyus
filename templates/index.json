@@ -119,8 +119,8 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Mens_Polo_White_06_3f1a9d91-834a-4564-817c-db1e70b5cdf5.jpg",
-        "image_2": "shopify://shop_images/Mens_Polo_Navy_01_279ac8fa-7570-4277-bc94-d53374b3a9fa.jpg",
+        "image": "shopify://shop_images/Mens_Polo_White_06_1d07e2ab-7eeb-4a1c-bd3e-f04ed7aca231.jpg",
+        "image_2": "shopify://shop_images/Mens_Polo_Navy_01_8f86dc0f-ff4c-4032-8c46-59d7fafa560f.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-center",
