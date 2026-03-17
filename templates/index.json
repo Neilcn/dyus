@@ -212,7 +212,7 @@
       "type": "custom-liquid",
       "disabled": true,
       "settings": {
-        "custom_liquid": "theme.liquid",
+        "custom_liquid": "<style>\n  /* Hide variant option text on product cards */\n  .product-card__variant-option,\n  .product-card__option,\n  .product-card__selected-option,\n  [data-product-option],\n  .product-card__meta .variant-option,\n  .product-card__meta [data-variant-option],\n  .product-card__meta .option-text,\n  .product-card__meta .selected-option-text,\n  .product-card__meta .variant-text,\n  .product-card__meta .color-size-text,\n  .product-card__meta .variant-display,\n  .product-card__meta .option-display {\n    display: none !important;\n  }\n  \n  /* Alternative selectors for common theme structures */\n  .product-card__info .variant-option,\n  .product-card__info [data-variant-option],\n  .product-card__info .option-text,\n  .product-card__info .selected-option-text,\n  .product-card__info .variant-text,\n  .product-card__info .color-size-text,\n  .product-card__info .variant-display,\n  .product-card__info .option-display {\n    display: none !important;\n  }\n  \n  /* Generic selectors for variant/option text */\n  .product-card__title + .variant-option,\n  .product-card__title + [data-variant-option],\n  .product-card__title + .option-text,\n  .product-card__title + .selected-option-text,\n  .product-card__title + .variant-text,\n  .product-card__title + .color-size-text {\n    display: none !important;\n  }\n  \n  /* Hide any element with specific data attributes */\n  [data-selected-option],\n  [data-variant-option-display],\n  [data-option-display] {\n    display: none !important;\n  }\n</style>",
         "color_scheme": "",
         "padding_top": 40,
         "padding_bottom": 52
