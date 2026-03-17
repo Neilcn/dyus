@@ -73,7 +73,7 @@
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "scheme-3",
-        "image_behavior": "none",
+        "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": false,
         "show_text_below": false
@@ -86,7 +86,7 @@
         "image": "shopify://shop_images/Track_Top_Navy_01_a0705c47-7e43-4cae-b97a-b1ab03c48482.jpg",
         "image_2": "shopify://shop_images/Womens_Polo_White_02.jpg",
         "image_overlay_opacity": 0,
-        "image_height": "medium",
+        "image_height": "adapt",
         "desktop_content_position": "top-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
