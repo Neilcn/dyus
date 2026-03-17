@@ -12,14 +12,14 @@
     "image_banner_ACRtyp": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/SS26_LRD_Dyus_Banner_template_93ce7f94-be9c-46d7-80da-107ed5ee3faf.jpg",
+        "image": "shopify://shop_images/SS26_LRD_Dyus_Banner_template_02.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
         "color_scheme": "",
-        "image_behavior": "none",
+        "image_behavior": "fixed",
         "mobile_content_alignment": "center",
         "stack_images_on_mobile": true,
         "show_text_below": true
