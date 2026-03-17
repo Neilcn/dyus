@@ -173,7 +173,7 @@
         "text_H7PVNE": {
           "type": "text",
           "settings": {
-            "text": "<p><a href=\"/collections/all\" title=\"所有產品\">Visit the Collection</a></p>"
+            "text": "<p><a href=\"/collections/all-products\" title=\"ALL PRODUCTS\">Visit the Collection</a></p>"
           }
         }
       },
