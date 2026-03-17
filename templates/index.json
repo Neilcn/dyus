@@ -12,7 +12,7 @@
     "image_banner_ACRtyp": {
       "type": "image-banner",
       "settings": {
-        "image": "shopify://shop_images/Online_shop_cover_banner__1_3b829328-c72c-49df-ab9b-d2cdd84e8250.jpg",
+        "image": "shopify://shop_images/SS26_LRD_Dyus_Banner_template.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-center",
@@ -27,6 +27,7 @@
     },
     "image_banner_CVdgKr": {
       "type": "image-banner",
+      "disabled": true,
       "settings": {
         "image": "shopify://shop_images/Online_shop_cover_banner__1_eef83042-165d-4059-a564-275b6f872719.jpg",
         "image_overlay_opacity": 0,
