@@ -101,8 +101,8 @@
       "type": "image-banner",
       "name": "t:sections.image-banner.presets.name",
       "settings": {
-        "image": "shopify://shop_images/Womens_Polo_Navy_02.jpg",
-        "image_2": "shopify://shop_images/Track_Top_White_02_af0d519d-da63-4c5c-b2e4-80d0934d7383.jpg",
+        "image": "shopify://shop_images/Womens_Polo_Navy_02_50766bd7-6663-4bbf-8f29-78418e7b2fca.jpg",
+        "image_2": "shopify://shop_images/Track_Top_White_02_ca9e1a79-0973-45ed-8ea0-5ad6272a4de8.jpg",
         "image_overlay_opacity": 0,
         "image_height": "adapt",
         "desktop_content_position": "top-center",
