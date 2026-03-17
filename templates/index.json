@@ -64,32 +64,6 @@
     },
     "image_banner": {
       "type": "image-banner",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "disabled": true,
-          "settings": {
-            "heading": "Browse our latest products",
-            "heading_size": "h0"
-          }
-        },
-        "buttons_YFXUR9": {
-          "type": "buttons",
-          "disabled": true,
-          "settings": {
-            "button_label_1": "Button label",
-            "button_link_1": "",
-            "button_style_secondary_1": false,
-            "button_label_2": "Button label",
-            "button_link_2": "",
-            "button_style_secondary_2": false
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "buttons_YFXUR9"
-      ],
       "settings": {
         "image": "shopify://shop_images/Track_Top_White_06_770443e5-68ac-4811-b370-0847a73ac2ec.jpg",
         "image_2": "shopify://shop_images/Track_Top_Navy_07_524bab4d-d3e0-4ae0-9127-750c6ed6eba4.jpg",
@@ -111,6 +85,24 @@
       "settings": {
         "image": "shopify://shop_images/Track_Top_Navy_01_a0705c47-7e43-4cae-b97a-b1ab03c48482.jpg",
         "image_2": "shopify://shop_images/Womens_Polo_White_02.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "medium",
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "fixed",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_ADYd8L": {
+      "type": "image-banner",
+      "name": "t:sections.image-banner.presets.name",
+      "settings": {
+        "image": "shopify://shop_images/Womens_Polo_Navy_02.jpg",
+        "image_2": "shopify://shop_images/Track_Top_White_02_af0d519d-da63-4c5c-b2e4-80d0934d7383.jpg",
         "image_overlay_opacity": 0,
         "image_height": "medium",
         "desktop_content_position": "top-center",
@@ -198,6 +190,7 @@
     "featured_collection",
     "image_banner",
     "image_banner_FDW9XK",
+    "image_banner_ADYd8L",
     "slideshow_jiK8gm",
     "rich_text_Q8TM98",
     "rich_text_wbVmTM",
