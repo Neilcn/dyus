@@ -204,3 +204,21 @@
 #shopify-section-template--21269574451423__image_banner_ACRtyp {
   margin-top: -100px;
 }
+/* KITH 風格 - Header 覆蓋在圖片上 */
+.shopify-section-group-header-group {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  background: transparent !important;
+}
+
+.shopify-section-group-header-group .header {
+  background: transparent !important;
+}
+
+.image-banner {
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+}
