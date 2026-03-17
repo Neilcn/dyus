@@ -14,6 +14,7 @@
       "blocks": {
         "text_jMKMKT": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "Tournament 01",
             "text_style": "uppercase"
