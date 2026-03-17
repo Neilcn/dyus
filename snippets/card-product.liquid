@@ -9,16 +9,22 @@
   if variant.featured_media != null
     assign featured_media = variant.featured_media
   endif
+
+  assign secondary_image = null
+  if show_secondary_image and variant.featured_media != null
+    for media in card_product.media
+      if media.id == variant.featured_media.id
+        assign next_index = forloop.index
+        assign secondary_image = card_product.media[next_index]
+        break
+      endif
+    endfor
+  endif
 -%}
-{% comment %}
-  Renders a product card
-{% endcomment %}
+
 {%- unless skip_styles -%}
   {{ 'component-rating.css' | asset_url | stylesheet_tag }}
-  {{ 'component-volume-pricing.css' | asset_url | stylesheet_tag }}
   {{ 'component-price.css' | asset_url | stylesheet_tag }}
-  {{ 'quick-order-list.css' | asset_url | stylesheet_tag }}
-  {{ 'quantity-popover.css' | asset_url | stylesheet_tag }}
 {%- endunless -%}
 
 {%- if card_product and card_product != empty -%}
@@ -35,91 +41,80 @@
   -%}
   <div class="card-wrapper product-card-wrapper underline-links-hover">
     <div
-      class="
-        card card--{{ settings.card_style }}
-        {% if featured_media %} card--media{% else %} card--text{% endif %}
-        {% if settings.card_style == 'card' %} color-{{ settings.card_color_scheme }} gradient{% endif %}
-        {% if image_shape and image_shape != 'default' %} card--shape{% endif %}
-        {% if extend_height %} card--extend-height{% endif %}
-        {% if featured_media == nil and settings.card_style == 'card' %} ratio{% endif %}
-        {% if horizontal_class %} card--horizontal{% endif %}
-      "
+      class="card card--{{ settings.card_style }} {% if featured_media %} card--media{% else %} card--text{% endif %}"
       style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
     >
       <div
-        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %}{% if featured_media or settings.card_style == 'standard' %} ratio{% endif %}"
+        class="card__inner {% if settings.card_style == 'standard' %}color-{{ settings.card_color_scheme }} gradient{% endif %} ratio"
         style="--ratio-percent: {{ 1 | divided_by: ratio | times: 100 }}%;"
       >
         {%- if featured_media -%}
-          <div class="card__media{% if image_shape and image_shape != 'default' %} shape--{{ image_shape }} color-{{ settings.card_color_scheme }} gradient{% endif %}">
-            <div class="media media--transparent">
+          <div class="card__media">
+            <div class="media media--transparent {% if secondary_image %} media--hover-effect{% endif %}">
+              {% comment %} 主圖 (正面) {% endcomment %}
               <img
-                srcset="
-                  {%- if featured_media.width >= 165 -%}{{ featured_media | image_url: width: 165 }} 165w,{%- endif -%}
-                  {%- if featured_media.width >= 360 -%}{{ featured_media | image_url: width: 360 }} 360w,{%- endif -%}
-                  {%- if featured_media.width >= 533 -%}{{ featured_media | image_url: width: 533 }} 533w,{%- endif -%}
-                  {%- if featured_media.width >= 720 -%}{{ featured_media | image_url: width: 720 }} 720w,{%- endif -%}
-                  {%- if featured_media.width >= 940 -%}{{ featured_media | image_url: width: 940 }} 940w,{%- endif -%}
-                  {%- if featured_media.width >= 1066 -%}{{ featured_media | image_url: width: 1066 }} 1066w,{%- endif -%}
-                  {{ featured_media | image_url }} {{ featured_media.width }}w
-                "
+                srcset="{{ featured_media | image_url: width: 533 }} 533w"
                 src="{{ featured_media | image_url: width: 533 }}"
-                sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 130 | divided_by: 4 }}px, (min-width: 990px) calc((100vw - 130px) / 4), (min-width: 750px) calc((100vw - 120px) / 3), calc((100vw - 35px) / 2)"
+                sizes="(min-width: 1200px) 300px, (min-width: 990px) calc((100vw - 130px) / 4), 50vw"
                 alt="{{ featured_media.alt | escape }}"
                 class="motion-reduce"
-                {% unless lazy_load == false %}
-                  loading="lazy"
-                {% endunless %}
+                loading="lazy"
                 width="{{ featured_media.width }}"
                 height="{{ featured_media.height }}"
               >
+
+              {% comment %} 懸停圖 (該顏色的背面) {% endcomment %}
+              {%- if secondary_image -%}
+                <img
+                  srcset="{{ secondary_image | image_url: width: 533 }} 533w"
+                  src="{{ secondary_image | image_url: width: 533 }}"
+                  sizes="(min-width: 1200px) 300px, (min-width: 990px) calc((100vw - 130px) / 4), 50vw"
+                  alt=""
+                  class="motion-reduce"
+                  loading="lazy"
+                  width="{{ secondary_image.width }}"
+                  height="{{ secondary_image.height }}"
+                >
+              {%- endif -%}
             </div>
           </div>
         {%- endif -%}
+
         <div class="card__content">
           <div class="card__information">
             <h3 class="card__heading">
               <a href="{{ card_product_variant.url }}" class="full-unstyled-link">
-                {{ card_product.title | escape }} - {{ card_product_variant.title | escape }}
+                {{ card_product.title | escape }}
               </a>
             </h3>
           </div>
         </div>
       </div>
+
       <div class="card__content">
         <div class="card__information">
-          <h3 class="card__heading{% if featured_media or settings.card_style == 'standard' %} h5{% endif %}">
+          <h3 class="card__heading h5">
             <a href="{{ card_product_variant.url }}" class="full-unstyled-link">
-              {{ card_product.title | escape }} - {{ card_product_variant.title | escape }}
+              {{ card_product.title | escape }}
             </a>
           </h3>
           <div class="card-information">
-            {%- if show_vendor -%}
-              <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
-            {%- endif -%}
-            {% render 'price', product: card_product, use_variant: true, price_class: '', show_compare_at_price: true %}
+            <div class="caption-with-letter-spacing light" style="margin-bottom: 0.5rem;">
+              {{ card_product_variant.title }}
+            </div>
+            {% render 'price', product: card_product, use_variant: true, show_compare_at_price: true %}
           </div>
         </div>
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
-            <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">{{ 'products.product.sold_out' | t }}</span>
+            <span class="badge badge--bottom-left color-{{ settings.sold_out_badge_color_scheme }}">
+              {{- 'products.product.sold_out' | t -}}
+            </span>
           {%- elsif card_product.compare_at_price > card_product.price and card_product.available -%}
-            <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">{{ 'products.product.on_sale' | t }}</span>
+            <span class="badge badge--bottom-left color-{{ settings.sale_badge_color_scheme }}">
+              {{- 'products.product.on_sale' | t -}}
+            </span>
           {%- endif -%}
-        </div>
-      </div>
-    </div>
-  </div>
-{%- else -%}
-  <div class="card-wrapper product-card-wrapper underline-links-hover">
-    <div class="card card--{{ settings.card_style }} {% if extend_height %} card--extend-height{% endif %}">
-      <div class="card__inner ratio" style="--ratio-percent: 100%;">
-        <div class="card__media">{{ 'product-apparel-2' | placeholder_svg_tag: 'placeholder-svg' }}</div>
-      </div>
-      <div class="card__content">
-        <div class="card__information">
-          <h3 class="h5">{{ 'onboarding.product_title' | t }}</h3>
-          {% render 'price', show_compare_at_price: true %}
         </div>
       </div>
     </div>
