@@ -139,7 +139,7 @@
       "settings": {
         "image": "shopify://shop_images/Dyus__SS25_product_layout_02.png",
         "image_overlay_opacity": 0,
-        "image_height": "adapt",
+        "image_height": "large",
         "desktop_content_position": "middle-center",
         "show_text_box": true,
         "desktop_content_alignment": "center",
