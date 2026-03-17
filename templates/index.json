@@ -1,1 +1,178 @@
-{"sections":{"image_banner_ACRtyp":{"type":"image-banner","settings":{"image":"shopify:\/\/shop_images\/Online_shop_cover_banner__1_3b829328-c72c-49df-ab9b-d2cdd84e8250.jpg","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"top-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"image_banner_CVdgKr":{"type":"image-banner","settings":{"image":"shopify:\/\/shop_images\/Online_shop_cover_banner__1_eef83042-165d-4059-a564-275b6f872719.jpg","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"bottom-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":true,"show_text_below":true}},"featured_collection":{"type":"featured-collection","settings":{"title":"2025 Spring\/Summer","heading_size":"h1","description":"<p>Club & Racquet<\/p>","show_description":false,"description_style":"body","collection":"all-products","products_to_show":16,"columns_desktop":4,"full_width":false,"show_view_all":true,"view_all_style":"outline","enable_desktop_slider":false,"color_scheme":"scheme-1","image_ratio":"square","image_shape":"default","show_secondary_image":true,"show_vendor":false,"show_rating":false,"quick_add":"none","columns_mobile":"2","swipe_on_mobile":false,"padding_top":36,"padding_bottom":36}},"image_banner":{"type":"image-banner","blocks":{"heading":{"type":"heading","disabled":true,"settings":{"heading":"Browse our latest products","heading_size":"h0"}},"buttons_YFXUR9":{"type":"buttons","disabled":true,"settings":{"button_label_1":"Button label","button_link_1":"","button_style_secondary_1":false,"button_label_2":"Button label","button_link_2":"","button_style_secondary_2":false}}},"block_order":["heading","buttons_YFXUR9"],"settings":{"image":"shopify:\/\/shop_images\/Banner_02_001.jpg","image_overlay_opacity":0,"image_height":"adapt","desktop_content_position":"middle-center","show_text_box":true,"desktop_content_alignment":"center","color_scheme":"scheme-3","image_behavior":"none","mobile_content_alignment":"center","stack_images_on_mobile":false,"show_text_below":false}},"rich_text_Q8TM98":{"type":"rich-text","blocks":{"text_H7PVNE":{"type":"text","settings":{"text":"<p><a href=\"\/collections\/all\" title=\"所有產品\">Visit the Collection<\/a><\/p>"}}},"block_order":["text_H7PVNE"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":16,"padding_bottom":40}},"rich_text_wbVmTM":{"type":"rich-text","blocks":{"text_fjDRjw":{"type":"text","settings":{"text":"<p>Dyus.Support@dyus-sports.com<\/p>"}}},"block_order":["text_fjDRjw"],"settings":{"desktop_content_position":"center","content_alignment":"center","color_scheme":"","full_width":true,"padding_top":40,"padding_bottom":52}},"custom_liquid_rgUtPi":{"type":"custom-liquid","disabled":true,"settings":{"custom_liquid":"theme.liquid","color_scheme":"","padding_top":40,"padding_bottom":52}}},"order":["image_banner_ACRtyp","image_banner_CVdgKr","featured_collection","image_banner","rich_text_Q8TM98","rich_text_wbVmTM","custom_liquid_rgUtPi"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "image_banner_ACRtyp": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Online_shop_cover_banner__1_3b829328-c72c-49df-ab9b-d2cdd84e8250.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "top-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "image_banner_CVdgKr": {
+      "type": "image-banner",
+      "settings": {
+        "image": "shopify://shop_images/Online_shop_cover_banner__1_eef83042-165d-4059-a564-275b6f872719.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "bottom-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": true,
+        "show_text_below": true
+      }
+    },
+    "featured_collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "La Renaissamce du Tennis 網興聯名款",
+        "heading_size": "h1",
+        "description": "<p>Club & Racquet</p>",
+        "show_description": false,
+        "description_style": "body",
+        "collection": "dyus-la-renaissamce-網興聯名款",
+        "products_to_show": 16,
+        "columns_desktop": 5,
+        "full_width": false,
+        "show_view_all": true,
+        "view_all_style": "outline",
+        "enable_desktop_slider": false,
+        "color_scheme": "scheme-1",
+        "image_ratio": "square",
+        "image_shape": "default",
+        "show_secondary_image": true,
+        "show_vendor": false,
+        "show_rating": false,
+        "quick_add": "none",
+        "columns_mobile": "2",
+        "swipe_on_mobile": false,
+        "padding_top": 36,
+        "padding_bottom": 36
+      }
+    },
+    "image_banner": {
+      "type": "image-banner",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "heading": "Browse our latest products",
+            "heading_size": "h0"
+          }
+        },
+        "buttons_YFXUR9": {
+          "type": "buttons",
+          "disabled": true,
+          "settings": {
+            "button_label_1": "Button label",
+            "button_link_1": "",
+            "button_style_secondary_1": false,
+            "button_label_2": "Button label",
+            "button_link_2": "",
+            "button_style_secondary_2": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "buttons_YFXUR9"
+      ],
+      "settings": {
+        "image": "shopify://shop_images/Banner_02_001.jpg",
+        "image_overlay_opacity": 0,
+        "image_height": "adapt",
+        "desktop_content_position": "middle-center",
+        "show_text_box": true,
+        "desktop_content_alignment": "center",
+        "color_scheme": "scheme-3",
+        "image_behavior": "none",
+        "mobile_content_alignment": "center",
+        "stack_images_on_mobile": false,
+        "show_text_below": false
+      }
+    },
+    "rich_text_Q8TM98": {
+      "type": "rich-text",
+      "blocks": {
+        "text_H7PVNE": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"/collections/all\" title=\"所有產品\">Visit the Collection</a></p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_H7PVNE"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 16,
+        "padding_bottom": 40
+      }
+    },
+    "rich_text_wbVmTM": {
+      "type": "rich-text",
+      "blocks": {
+        "text_fjDRjw": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Dyus.Support@dyus-sports.com</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_fjDRjw"
+      ],
+      "settings": {
+        "desktop_content_position": "center",
+        "content_alignment": "center",
+        "color_scheme": "",
+        "full_width": true,
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    },
+    "custom_liquid_rgUtPi": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "settings": {
+        "custom_liquid": "theme.liquid",
+        "color_scheme": "",
+        "padding_top": 40,
+        "padding_bottom": 52
+      }
+    }
+  },
+  "order": [
+    "image_banner_ACRtyp",
+    "image_banner_CVdgKr",
+    "featured_collection",
+    "image_banner",
+    "rich_text_Q8TM98",
+    "rich_text_wbVmTM",
+    "custom_liquid_rgUtPi"
+  ]
+}
