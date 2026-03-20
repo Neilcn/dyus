@@ -67,14 +67,17 @@
           const variantSelects = document.querySelector('variant-selects');
           if (!variantSelects) return;
 
-          // 【核心修復】：改從變體 JSON 抓取原始 option1 (永遠是英文)，不使用翻譯文字
-          const variantDataJson = variantSelects.querySelector('[type="application/json"]');
-          if (!variantDataJson) return;
-          const currentVariant = JSON.parse(variantDataJson.textContent);
-          const selectedColor = currentVariant.option1; 
+          // 【關鍵修復點】：直接抓 JSON 資料，避開介面上的中文翻譯文字
+          const variantDataScript = variantSelects.querySelector('[type="application/json"]');
+          if (!variantDataScript) return;
+          const variantData = JSON.parse(variantDataScript.textContent);
+          
+          // 選取原始顏色名稱 (option1)，例如 "Blue Night" 或 "White"
+          const selectedColorRaw = variantData.option1; 
 
+          // 根據原始顏色名稱切換圖片
           mediaGallery.querySelectorAll('ul li[data-media-group]').forEach(mediaItem => {
-            if (mediaItem.getAttribute('data-media-group') === selectedColor) {
+            if (mediaItem.getAttribute('data-media-group') === selectedColorRaw) {
               mediaItem.classList.remove('hidden');
             } else {
               mediaItem.classList.add('hidden');
