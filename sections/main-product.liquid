@@ -52,10 +52,11 @@
           colorImageIDs[color] = imageIDs;
         });
 
+       // 標記所有圖片與縮圖，確保主圖與下方小圖都能正確過濾
         Object.entries(colorImageIDs).forEach(([color, imageIDs]) => {
           imageIDs.forEach(mediaID => {
-            const selector = `[data-media-id="${sectionID}-${mediaID}"], [data-target="${sectionID}-${mediaID}"]`;
-            const mediaItems = mediaGallery.querySelectorAll(`li${selector}`);
+            // 這裡修正了選擇器，確保能抓到主圖與縮圖容器
+            const mediaItems = mediaGallery.querySelectorAll(`[data-media-id$="${mediaID}"], [data-target$="${mediaID}"]`);
             mediaItems.forEach(mediaItem => {
               mediaItem.setAttribute('data-media-group', color);
             });
